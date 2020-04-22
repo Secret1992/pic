@@ -1,0 +1,262 @@
+
+/*******************************************************************************
+ * 模块关键样式：
+ * 注：
+ */
+
+.wbht_content {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* 滑动器容器 */
+
+.wbht_slider_housetype {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    z-index: 1;
+}
+
+.wbht_slider_overview {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    z-index: 1;
+}
+
+.wbht_slider_detail {
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    z-index: 1;
+}
+
+.wbht_slider_detail .wbht_slider_floor{
+    position: absolute;
+    background: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    margin: 0px;
+    z-index: 1;
+}
+
+/* 容器可关联菜单 */
+
+.wbht_slider_menu {
+    position: absolute;
+    background: none;
+    width: 0;
+    height: 0;
+    right: 0;
+    top: 40%;
+    z-index: 1;
+}
+.wbht_slider_menu>img {
+    position: relative;
+    float: left;
+    width: auto;
+    height: auto;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+/*******************************************************************************
+ * 辅助：单一资源可选属性
+ * 注：
+ */
+
+/* 资源属性 */
+.wbht_item_image {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.wbht_item_button {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0px;
+    top: 0px;
+}
+.wbht_item_button_show {
+    position: absolute;
+    width: auto;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    z-index: 3;
+}
+
+.wbht_item_over {
+    z-index: 2;
+}
+
+.wbht_item_button {
+    position: absolute;
+    background: none;
+    width: auto;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.wbht_item_button_single {
+    position: absolute;
+    background: none;
+    width: auto;
+    height: auto;
+    left: 0px;
+    top: 0px;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+/*******************************************************************************
+ * 辅助：动画
+ * 注：
+ */
+
+.wbht_animation_fadeinup {
+    animation: wbht_fadeInUp 1s;
+    -webkit-animation-name: wbht_fadeInUp 1s;
+}
+.wbht_animation_fadeindown {
+    animation: wbht_fadeInDown 1s;
+    -webkit-animation-name: wbht_fadeInDown 1s;
+}
+.wbht_animation_fadeinleft {
+    animation: wbht_fadeInLeft 1s;
+    -webkit-animation-name: wbht_fadeInLeft 1s;
+}
+.wbht_animation_fadeinright {
+    animation: wbht_fadeInRight 1s;
+    -webkit-animation-name: wbht_fadeInRight 1s;
+}
+
+.wbht_animation_zoom {
+    animation: wbht_circleZoom 1s infinite;
+    -webkit-animation-name: wbht_circleZoom 1s infinite;
+}
+
+.wbht_animation_rotate {
+    animation: wbht_circleRotate 1s infinite;
+    -webkit-animation-name: wbht_circleRotate 1s infinite;
+}
+
+
+@-webkit-keyframes wbht_fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+@-webkit-keyframes wbht_fadeInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes wbht_fadeInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes wbht_fadeInRight {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes wbht_circleZoom {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: scale3d(1.2, 1.2, 1.2);
+        transform: scale3d(1.2, 1.2, 1.2);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@-webkit-keyframes wbht_circleRotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
